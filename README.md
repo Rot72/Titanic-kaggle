@@ -1,6 +1,3 @@
-# Titanic-kaggle
- Machine Learning - Titanic
-
 <!doctype html>
 <html lang="en">
     <head>
