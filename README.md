@@ -94,7 +94,7 @@
             </li>
             <li>
                 One surviving passenger aged 80 was considered an outlier.<br>
-                [![report_age]](https://github.com/Rot72/Titanic-kaggle/blob/main/report_age.png)
+                <img src="https://github.com/Rot72/Titanic-kaggle/blob/main/report_age.png">
             </li>
         </ul>
         <br><br>
@@ -180,6 +180,23 @@
         </ul>                    
     </li>
     <li>
+        <h4>Confusion Matrix Metrics</h4>
+        <ul>
+            <li>
+                <strong>Accuracy:</strong> It is the proportion of correct predictions to the total number of predictions. It represents the overall prediction accuracy of the model.
+            </li>
+            <li>
+                <strong>Precision:</strong> Also known as Positive Predictive Value, it is the proportion of true positives to the total number of positive predictions (true positives + false positives). It represents the model's ability to correctly identify positive examples.
+            </li>
+            <li>
+                <strong>Recall:</strong> Also known as Sensitivity or True Positive Rate, it is the proportion of true positives to the total number of positive examples (true positives + false negatives). It represents the model's ability to identify all positive examples.
+            </li>
+            <li>
+                <strong>F1-Score:</strong> It is the harmonic mean of Precision and Recall. It is a combined measure that takes into account both the precision and recall of the model. It is useful when there is an imbalance between the classes.
+            </li>
+        </ul>
+    </li>    
+    <li>
         <h4>Accuracy of classification</h4>
         <table>
             <thead>
@@ -215,24 +232,7 @@
                 </tr>
             </tbody>
         </table>  
-    </li>
-    <li>
-        <h4>Confusion Matrix Metrics</h4>
-        <ul>
-            <li>
-                <strong>Accuracy:</strong> It is the proportion of correct predictions to the total number of predictions. It represents the overall prediction accuracy of the model.
-            </li>
-            <li>
-                <strong>Precision:</strong> Also known as Positive Predictive Value, it is the proportion of true positives to the total number of positive predictions (true positives + false positives). It represents the model's ability to correctly identify positive examples.
-            </li>
-            <li>
-                <strong>Recall:</strong> Also known as Sensitivity or True Positive Rate, it is the proportion of true positives to the total number of positive examples (true positives + false negatives). It represents the model's ability to identify all positive examples.
-            </li>
-            <li>
-                <strong>F1-Score:</strong> It is the harmonic mean of Precision and Recall. It is a combined measure that takes into account both the precision and recall of the model. It is useful when there is an imbalance between the classes.
-            </li>
-        </ul>
-    </li>     
+    </li>    
     <li>
         <h4>Algorithms</h4>
         <table>
