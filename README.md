@@ -93,9 +93,7 @@
                     </li>
                 </ol>
             </li>
-            <li> 
-                One 80 year old survivor in the first class was considered an Outlier.
-            </li>
+
         </ul>
         <br><br>
         <ul>
