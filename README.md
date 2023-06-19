@@ -94,6 +94,7 @@
             </li>
             <li>
                 One surviving passenger aged 80 was considered an outlier.
+                ![Report by Age](report_age.png)
             </li>
         </ul>
         <br><br>
