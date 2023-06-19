@@ -14,19 +14,18 @@
             <li>
                 Data Cleaning: titanic_train.csv
             </li>                          
-            </li>
             <li>  
                 There is no duplicate data.
             </li>    
             <li> 
-                Removal of non-numeric values: Name, Ticket and Cabin
-            </li> 
-            <li> 
                 Embarked field had 2 null fields the mode was taken and the value equal to S was found.
-            </li>                         
+            </li>            
+            <li>
+                Removal of non-numeric values: 'Name', 'Sex', 'Ticket', 'Cabin', 'Embarked'
+            </li>                          
                 <ul>
                     <li>
-                    Classification of crew and passengers was analyzed by Survived, Pclass, Sex, Age, SibSp, Parch, Fare, Embarked.
+                    Classification of crew and passengers was analyzed by Survived, Pclass, Age.
                     </li>
                     <li>
                     The following columns have been removed from the dataframe:
@@ -92,31 +91,17 @@
                     </li>
                 </ol>
             </li>
-            <li>
-                One surviving passenger aged 80 was considered an outlier.<br>
-                <img src="https://github.com/Rot72/Titanic-kaggle/blob/main/report_age.png">
-            </li>
         </ul>
-        <br><br>
+        <br>
         <ul>
             <li>
                 Data Cleaning: titanic_test.csv
             </li>                         
-            </li>
-            <li>  
-                There is no duplicate data.
-            </li>    
             <li>  
             There is an empty value in the Fare column. <br>
             The average was taken to fill it.<br>
             Fare: 35.63 £
-            </li>                        
-            <li> 
-                Removal of non-numeric values: Name, Ticket and Cabin
-            </li>          
-            <li> 
-                One hot was used again for Age and Sex fields
-            </li>
+            </li>                             
             <li> 
                 Number of null fields in 'Age': <b>86</b> of 418<br>
                 7+4+50+2+1+22 = <b>86</b>
@@ -159,23 +144,64 @@
                 </ol>
             </li>
         </ul>
+        <ul>
+            <li>
+                After removing the non-numeric fields and filling in the null fields, the accuracy was calculated<br>
+                <h4>Algorithms</h4>
+                <table>
+                    <tr>
+                        <th>Model</th>
+                        <th>Accuracy</th>
+                    </tr>
+                    <tr>
+                        <td>DecisionTreeClassifier</td>
+                        <td>0.6425</td>
+                    </tr>
+                    <tr>
+                        <td>KNeighborsClassifier n_neighbors=3</td>
+                        <td>0.8324</td>
+                    </tr>
+                    <tr>
+                        <td>KNeighborsClassifier n_neighbors=5</td>
+                        <td>0.8212</td>
+                    </tr>
+                    <tr>
+                        <td>KNeighborsClassifier n_neighbors=7</td>
+                        <td>0.7709</td>
+                    </tr>                    
+                    <tr>
+                        <td>LogisticRegression</td>
+                        <td>0.7048</td>
+                    </tr>
+                </table>                
+            </li>
+        </ul>              
+        <ul>
+            <li>
+                As the indices were low, some techniques were used to increase them.
+            </li>
+            <li>
+                One surviving passenger aged 80 was considered an outlier.<br>
+                <img src="https://github.com/Rot72/Titanic-kaggle/blob/main/report_age.png">
+            </li>
+        </ul>
         <h4>Normalization</h4>
         <ul>
             <li>
-                For the "Sex" column, one-hot encoding, also known as dummy encoding, was used. One-hot coding creates a new column for each category of the categorical variable and assigns binary values (0 or 1). 
-            </li>
-            <li>
-                Field Embarked through the one hot method became Embarked_C, Embarked_Q, Embarked_S
+                One Hot Encoding was used for features Embarked and Sex<br>
+                Embarked through the One Hot Encoding became Embarked_C, Embarked_Q, Embarked_S
+                Sex had values male and female became Sex_male and Sex_female<br>
             </li>
         </ul>                
         <h4>Transformation - discretization</h4>
         <ul>
             <li>                   
                 The cut function is used to create the "Age_Group" column based on the given age groups. Then the get_dummies function is applied on the "Age_Group" column to create the corresponding dummy variables. "Age_Group_" prefixes are added to new column names to indicate age groups.<br>   
-                It was divided into:<br>
-                Age_Group_1 = up to 18 years old<br>
-                Age_Group_2 = 18-64 years old<br>
-                Age_Group_3 = over 64 years old
+                Age was divided into three categories:<br>
+                1 - up to 17 years old<br>
+                2 - 18 to 64 years old<br>
+                3 - over 64 years old<br>
+                Each category became a feature Age_Group_1, Age_Group_2 and Age_Group_3
             </li>
         </ul>                    
     </li>
