@@ -12,7 +12,7 @@
         Data preparation, performing tasks such as cleaning, handling missing values and coding categorical variables.<br><br>
         <ul>
             <li>
-                Data Cleaning: titanic_train.csv
+                Data: train.csv
             </li>                          
             <li>  
                 There is no duplicate data.
@@ -95,7 +95,7 @@
         <br>
         <ul>
             <li>
-                Data Cleaning: titanic_test.csv
+                Data: test.csv
             </li>                         
             <li>  
             There is an empty value in the Fare column. <br>
@@ -245,12 +245,26 @@
                     <td>55</td>
                 </tr>
                 <tr>
-                    <td>KNeighborsClassifier</td>
+                    <td>KNeighborsClassifier n_neighbors=3</td>
                     <td>92</td>
                     <td>10</td>
                     <td>14</td>
                     <td>63</td>
                 </tr>
+                <tr>
+                    <td>KNeighborsClassifier n_neighbors=5</td>
+                    <td>94</td>
+                    <td>8</td>
+                    <td>22</td>
+                    <td>55</td>
+                </tr>
+                <tr>
+                    <td>KNeighborsClassifier n_neighbors=7</td>
+                    <td>91</td>
+                    <td>11</td>
+                    <td>25</td>
+                    <td>52</td>
+                </tr>                
                 <tr>
                     <td>LogisticRegression</td>
                     <td>96</td>
@@ -273,29 +287,45 @@
             </tr>
             <tr>
                 <td>DecisionTreeClassifier</td>
-                <td>0.8268156424581006</td>
-                <td>0.859375</td>
-                <td>0.7142857142857143</td>
-                <td>0.7801418439716311</td>
+                <td>0.8268</td>
+                <td>0.8593</td>
+                <td>0.7142</td>
+                <td>0.7801</td>
             </tr>
             <tr>
-                <td>KNeighborsClassifier</td>
-                <td>0.8659217877094972</td>
-                <td>0.863013698630137</td>
-                <td>0.8181818181818182</td>
-                <td>0.8400000000000001</td>
+                <td>KNeighborsClassifier n_neighbors=3</td>
+                <td>0.8659</td>
+                <td>0.8630</td>
+                <td>0.8181</td>
+                <td>0.8400</td>
             </tr>
+            <tr>
+                <td>KNeighborsClassifier n_neighbors=5</td>
+                <td>0.8324</td>
+                <td>0.8730</td>
+                <td>0.7142</td>
+                <td>0.7857</td>
+            </tr>
+            <tr>
+                <td>KNeighborsClassifier n_neighbors=7</td>
+                <td>0.7988</td>
+                <td>0.8253</td>
+                <td>0.6753</td>
+                <td>0.7428</td>
+            </tr>            
             <tr>
                 <td>LogisticRegression</td>
-                <td>0.8547486033519553</td>
-                <td>0.9047619047619048</td>
-                <td>0.7402597402597403</td>
-                <td>0.8142857142857143</td>
+                <td>0.8547</td>
+                <td>0.9047</td>
+                <td>0.7402</td>
+                <td>0.8142</td>
             </tr>
         </table>
     </li>
     <li>
         <h4>Decision</h4>
-            Based on the metrics and considerations above, the KNeighborsClassifier model appears to be a solid performer, with a good mix of accuracy, recall, and F1-Score.
+            Based on the metrics and considerations above, the KNeighborsClassifier model appears to be a solid performer, with a good mix of accuracy, recall, and F1-Score.<br>
+    <img src="https://github.com/Rot72/Titanic-kaggle/blob/main/chartjs_survived_age_train_test.png"><br><br>
+    <img src="https://github.com/Rot72/Titanic-kaggle/blob/main/chartjs_no_survived_age_train_test.png"><br>
     </li>
 </ol>
