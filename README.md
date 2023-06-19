@@ -144,6 +144,7 @@
                 </ol>
             </li>
         </ul>
+        <br>
         <ul>
             <li>
                 After removing the non-numeric fields and filling in the null fields, the accuracy was calculated<br>
@@ -175,10 +176,11 @@
                     </tr>
                 </table>                
             </li>
-        </ul>              
+        </ul>           
+        <br><br><br>
         <ul>
             <li>
-                As the indices were low, some techniques were used to increase them.
+                <h2>As the indices were low, some techniques were used to increase them.</h2>
             </li>
             <li>
                 One surviving passenger aged 80 was considered an outlier.<br>
