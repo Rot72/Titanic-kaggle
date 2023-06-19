@@ -324,7 +324,7 @@
     </li>
     <li>
         <h4>Decision</h4>
-            Based on the metrics and considerations above, the KNeighborsClassifier model appears to be a solid performer, with a good mix of accuracy, recall, and F1-Score.<br>
+            Based on the metrics and considerations above, the KNeighborsClassifier model appears to be a solid performer, with a good mix of accuracy, recall, and F1-Score.<br><br>
     <img src="https://github.com/Rot72/Titanic-kaggle/blob/main/chartjs_survived_age_train_test.png"><br><br>
     <img src="https://github.com/Rot72/Titanic-kaggle/blob/main/chartjs_no_survived_age_train_test.png"><br>
     </li>
