@@ -44,9 +44,7 @@
                     </li>
                 </ul>
             </li>                    
-            <li> 
-                One 80 year old survivor in the first class was considered an Outlier.
-            </li>
+
             <li> 
                 Number of null fields in 'Age': <b>177</b> of 891<br>
                 5+16+2+7+9+85+9+2+25+17 = <b>177</b>
@@ -94,6 +92,9 @@
                     Normal average was used: 23.8
                     </li>
                 </ol>
+            </li>
+            <li> 
+                One 80 year old survivor in the first class was considered an Outlier.
             </li>
         </ul>
         <br><br>
