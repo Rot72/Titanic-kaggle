@@ -183,8 +183,8 @@
                 <h2>As the indices were low, some techniques were used to increase them.</h2>
             </li>
             <li>
-                One surviving passenger aged 80 was considered an outlier.<br>
-                <img src="https://github.com/Rot72/Titanic-kaggle/blob/main/report_age.png">
+                One surviving passenger aged 80 was considered an outlier.<br><br>
+                <img src="https://github.com/Rot72/Titanic-kaggle/blob/main/report_age.png" width="800">
             </li>
         </ul>
         <h4>Normalization</h4>
@@ -325,7 +325,7 @@
     <li>
         <h4>Decision</h4>
             Based on the metrics and considerations above, the KNeighborsClassifier model appears to be a solid performer, with a good mix of accuracy, recall, and F1-Score.<br><br>
-    <img src="https://github.com/Rot72/Titanic-kaggle/blob/main/chartjs_survived_age_train_test.png"><br><br>
-    <img src="https://github.com/Rot72/Titanic-kaggle/blob/main/chartjs_no_survived_age_train_test.png"><br>
+    <img src="https://github.com/Rot72/Titanic-kaggle/blob/main/chartjs_survived_age_train_test.png" width="800"><br><br>
+    <img src="https://github.com/Rot72/Titanic-kaggle/blob/main/chartjs_no_survived_age_train_test.png" width="800"><br>
     </li>
 </ol>
