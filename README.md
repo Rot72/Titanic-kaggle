@@ -94,7 +94,7 @@
             </li>
             <li>
                 One surviving passenger aged 80 was considered an outlier.<br>
-                ![report_age](./assets/102049806/9d7b4c74-f27b-4b48-913d-af58ef6854c5.png)
+                [![report_age]](https://github.com/Rot72/Titanic-kaggle/blob/main/report_age.png)
             </li>
         </ul>
         <br><br>
