@@ -44,7 +44,6 @@
                     </li>
                 </ul>
             </li>                    
-
             <li> 
                 Number of null fields in 'Age': <b>177</b> of 891<br>
                 5+16+2+7+9+85+9+2+25+17 = <b>177</b>
@@ -93,7 +92,9 @@
                     </li>
                 </ol>
             </li>
-
+            <li>
+                One surviving passenger aged 80 was considered an outlier.
+            </li>
         </ul>
         <br><br>
         <ul>
