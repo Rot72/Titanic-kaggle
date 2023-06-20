@@ -178,7 +178,7 @@
                 </table>                
             </li>
         </ul>           
-        <br><br><br>
+        <br>
         <ul>
             <li>
                 <h2>As the indices were low, some techniques were used to increase them.</h2>
