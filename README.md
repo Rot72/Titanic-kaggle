@@ -230,7 +230,6 @@
         </ul>
     </li>    
     <li>
-        <h4>Confusion Matrix</h4>
         <table>
             <thead>
                 <tr>
