@@ -51,7 +51,8 @@
                 AVERAGE was made to fill in these fields, the averages were found using the following criteria: Survived, Gender, Age Group and Pclass.<br>
                 <ol>
                     <li>
-                    There were <b>5</b> valueless records for first class male survivor. The average age of the first class male survivor was 36.2 goes to 35.1 with the removal of the outlier.
+                    There were <b>5</b> valueless records for first class male survivor.<br>
+                    The average age of the first class male survivor is 36.2.
                     </li>
                     <li>
                     There were <b>16</b> valueless records for non-surviving first class male<br>
@@ -183,7 +184,10 @@
                 <h2>As the indices were low, some techniques were used to increase them.</h2>
             </li>
             <li>
-                One surviving passenger aged 80 was considered an outlier.<br><br>
+                One surviving passenger aged 80 was considered an outlier.<br>
+                The average age of the first class male survivor was 36.2 goes to 35.1 with the removal.<br>
+                With the removal of the outlier, the dataset now contains 890 records.
+                <br><br>
                 <img src="https://github.com/Rot72/Titanic-kaggle/blob/main/report_age.png" width="800">
             </li>
         </ul>
@@ -203,7 +207,8 @@
                 1 - up to 17 years old<br>
                 2 - 18 to 64 years old<br>
                 3 - over 64 years old<br>
-                Each category became a feature Age_Group_1, Age_Group_2 and Age_Group_3
+                Each category became a feature Age_Group_1, Age_Group_2 and Age_Group_3<br>
+                It was used only to calculate the average age of passengers without age information.
             </li>
         </ul>                    
     </li>
@@ -225,7 +230,7 @@
         </ul>
     </li>    
     <li>
-        <h4>Accuracy of classification</h4>
+        <h4>Confusion Matrix</h4>
         <table>
             <thead>
                 <tr>
@@ -239,38 +244,38 @@
             <tbody>
                 <tr>
                     <td>DecisionTreeClassifier</td>
-                    <td>93</td>
-                    <td>9</td>
-                    <td>22</td>
-                    <td>55</td>
+                    <td>97</td>
+                    <td>13</td>
+                    <td>12</td>
+                    <td>56</td>
                 </tr>
                 <tr>
                     <td>KNeighborsClassifier n_neighbors=3</td>
-                    <td>92</td>
-                    <td>10</td>
-                    <td>14</td>
-                    <td>63</td>
+                    <td>103</td>
+                    <td>7</td>
+                    <td>11</td>
+                    <td>57</td>
                 </tr>
                 <tr>
                     <td>KNeighborsClassifier n_neighbors=5</td>
-                    <td>94</td>
-                    <td>8</td>
-                    <td>22</td>
-                    <td>55</td>
+                    <td>101</td>
+                    <td>9</td>
+                    <td>14</td>
+                    <td>54</td>
                 </tr>
                 <tr>
                     <td>KNeighborsClassifier n_neighbors=7</td>
-                    <td>91</td>
+                    <td>99</td>
                     <td>11</td>
-                    <td>25</td>
-                    <td>52</td>
+                    <td>18</td>
+                    <td>50</td>
                 </tr>                
                 <tr>
                     <td>LogisticRegression</td>
-                    <td>96</td>
-                    <td>6</td>
-                    <td>20</td>
-                    <td>57</td>
+                    <td>103</td>
+                    <td>7</td>
+                    <td>14</td>
+                    <td>54</td>
                 </tr>
             </tbody>
         </table>  
@@ -287,38 +292,38 @@
             </tr>
             <tr>
                 <td>DecisionTreeClassifier</td>
-                <td>0.8268</td>
-                <td>0.8593</td>
-                <td>0.7142</td>
-                <td>0.7801</td>
+                <td>0.8595505617977528</td>
+                <td>0.8115942028985508</td>
+                <td>0.8235294117647058</td>
+                <td>0.8175182481751825</td>
             </tr>
             <tr>
                 <td>KNeighborsClassifier n_neighbors=3</td>
-                <td>0.8659</td>
-                <td>0.8630</td>
-                <td>0.8181</td>
-                <td>0.8400</td>
+                <td>0.898876404494382</td>
+                <td>0.890625</td>
+                <td>0.8382352941176471</td>
+                <td>0.8636363636363636</td>
             </tr>
             <tr>
                 <td>KNeighborsClassifier n_neighbors=5</td>
-                <td>0.8324</td>
-                <td>0.8730</td>
-                <td>0.7142</td>
-                <td>0.7857</td>
+                <td>0.8707865168539326</td>
+                <td>0.8571428571428571</td>
+                <td>0.7941176470588235</td>
+                <td>0.8244274809160305</td>
             </tr>
             <tr>
                 <td>KNeighborsClassifier n_neighbors=7</td>
-                <td>0.7988</td>
-                <td>0.8253</td>
-                <td>0.6753</td>
-                <td>0.7428</td>
+                <td>0.8370786516853933</td>
+                <td>0.819672131147541</td>
+                <td>0.7352941176470589</td>
+                <td>0.7751937984496124</td>
             </tr>            
             <tr>
                 <td>LogisticRegression</td>
-                <td>0.8547</td>
-                <td>0.9047</td>
-                <td>0.7402</td>
-                <td>0.8142</td>
+                <td>0.8820224719101124</td>
+                <td>0.8852459016393442</td>
+                <td>0.7941176470588235</td>
+                <td>0.8372093023255813</td>
             </tr>
         </table>
     </li>
