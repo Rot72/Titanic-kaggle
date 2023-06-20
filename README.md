@@ -227,57 +227,56 @@
             <li>
                 <strong>F1-Score:</strong> It is the harmonic mean of Precision and Recall. It is a combined measure that takes into account both the precision and recall of the model. It is useful when there is an imbalance between the classes.
             </li>
-            <li>
-                <table>
-                    <thead>
-                        <tr>
-                        <th>Model</th>
-                        <th>True Positive</th>
-                        <th>False Positive</th>
-                        <th>False Negative</th>
-                        <th>True Negative</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>DecisionTreeClassifier</td>
-                            <td>97</td>
-                            <td>13</td>
-                            <td>12</td>
-                            <td>56</td>
-                        </tr>
-                        <tr>
-                            <td>KNeighborsClassifier n_neighbors=3</td>
-                            <td>103</td>
-                            <td>7</td>
-                            <td>11</td>
-                            <td>57</td>
-                        </tr>
-                        <tr>
-                            <td>KNeighborsClassifier n_neighbors=5</td>
-                            <td>101</td>
-                            <td>9</td>
-                            <td>14</td>
-                            <td>54</td>
-                        </tr>
-                        <tr>
-                            <td>KNeighborsClassifier n_neighbors=7</td>
-                            <td>99</td>
-                            <td>11</td>
-                            <td>18</td>
-                            <td>50</td>
-                        </tr>                
-                        <tr>
-                            <td>LogisticRegression</td>
-                            <td>103</td>
-                            <td>7</td>
-                            <td>14</td>
-                            <td>54</td>
-                        </tr>
-                    </tbody>
-                </table>  
-            </li>                
         </ul>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                <th>Model</th>
+                <th>True Positive</th>
+                <th>False Positive</th>
+                <th>False Negative</th>
+                <th>True Negative</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>DecisionTreeClassifier</td>
+                    <td>97</td>
+                    <td>13</td>
+                    <td>12</td>
+                    <td>56</td>
+                </tr>
+                <tr>
+                    <td>KNeighborsClassifier n_neighbors=3</td>
+                    <td>103</td>
+                    <td>7</td>
+                    <td>11</td>
+                    <td>57</td>
+                </tr>
+                <tr>
+                    <td>KNeighborsClassifier n_neighbors=5</td>
+                    <td>101</td>
+                    <td>9</td>
+                    <td>14</td>
+                    <td>54</td>
+                </tr>
+                <tr>
+                    <td>KNeighborsClassifier n_neighbors=7</td>
+                    <td>99</td>
+                    <td>11</td>
+                    <td>18</td>
+                    <td>50</td>
+                </tr>                
+                <tr>
+                    <td>LogisticRegression</td>
+                    <td>103</td>
+                    <td>7</td>
+                    <td>14</td>
+                    <td>54</td>
+                </tr>
+            </tbody>
+        </table>  
     </li>    
     <li>
         <h4>Algorithms</h4>
